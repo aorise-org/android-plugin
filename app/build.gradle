@@ -101,27 +101,27 @@ android {
                                     CHANNEL_VALUE         : "aorise",
                                     UMENG_APPKEY_VALUE    : "594a0dc076661341b30014d1"]
         }
-        hospital {
-            applicationId 'cn.aorise.hospital'
-            versionCode 1
-            versionName "1.0.0"
-
-            manifestPlaceholders = [PACKAGE_NAME_VALUE    : "cn.aorise.hospital",
-                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.plugin.ui.activity.MainActivity",
-                                    CHANNEL_VALUE         : "aorise",
-                                    UMENG_APPKEY_VALUE    : "594a0dc076661341b30014d1"]
-        }
-        petition {
-            applicationId 'cn.aorise.petition'
-
-            versionCode 1
-            versionName "1.0.0"
-
-            manifestPlaceholders = [PACKAGE_NAME_VALUE    : "cn.aorise.petition",
-                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.plugin.ui.activity.MainActivity",
-                                    CHANNEL_VALUE         : "aorise",
-                                    UMENG_APPKEY_VALUE    : "594a0dc076661341b30014d1"]
-        }
+//        hospital {
+//            applicationId 'cn.aorise.hospital'
+//            versionCode 1
+//            versionName "1.0.0"
+//
+//            manifestPlaceholders = [PACKAGE_NAME_VALUE    : "cn.aorise.hospital",
+//                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.plugin.ui.activity.MainActivity",
+//                                    CHANNEL_VALUE         : "aorise",
+//                                    UMENG_APPKEY_VALUE    : "594a0dc076661341b30014d1"]
+//        }
+//        petition {
+//            applicationId 'cn.aorise.petition'
+//
+//            versionCode 1
+//            versionName "1.0.0"
+//
+//            manifestPlaceholders = [PACKAGE_NAME_VALUE    : "cn.aorise.petition",
+//                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.plugin.ui.activity.MainActivity",
+//                                    CHANNEL_VALUE         : "aorise",
+//                                    UMENG_APPKEY_VALUE    : "594a0dc076661341b30014d1"]
+//        }
         sample {
             applicationId 'cn.aorise.sample'
             versionCode 1
@@ -147,8 +147,9 @@ android {
     }
 }
 
-// 这个plugin需要放在android配置之后，因为需要读取android中的配置项
+
 apply plugin: 'replugin-plugin-gradle'
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     // compile project(':commonLib')
