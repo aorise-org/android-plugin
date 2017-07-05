@@ -6,6 +6,7 @@ import android.view.View;
 
 import cn.aorise.common.core.utils.assist.AoriseLog;
 import cn.aorise.common.core.utils.assist.AoriseUtil;
+import cn.aorise.common.core.utils.system.PackageUtil;
 import cn.aorise.plugin.BuildConfig;
 import cn.aorise.plugin.R;
 import cn.aorise.plugin.databinding.SampleActivityMainBinding;
@@ -23,7 +24,8 @@ public class MainActivity extends SampleBaseActivity implements View.OnClickList
 
     @Override
     protected void initData() {
-
+        String mode = BuildConfig.DEBUG ? "======> debug 模式" : "======> release 模式";
+        AoriseLog.i(TAG, "内部插件：" + getPackageName() + mode);
     }
 
     @Override
