@@ -32,7 +32,8 @@
         </activity>
         <activity
             android:name="cn.aorise.common.component.login.AoriseLoginActivity"
-            android:label="@string/aorise_component_title_activity_login" />
+            android:label="@string/aorise_component_title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
         <!-- 公共启动页 end-->
 
         <!-- 自定义启动页 start-->
@@ -54,33 +55,40 @@
         <!-- Umeng start -->
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="${UMENG_APPKEY_VALUE}"/>
+            android:value="${UMENG_APPKEY_VALUE}" />
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="${CHANNEL_VALUE}"/>
+            android:value="${CHANNEL_VALUE}" />
         <!-- Umeng end -->
 
         <activity
             android:name="cn.aorise.plugin.ui.activity.WebViewActivity"
-            android:label="@string/sample_title_activity_about" />
+            android:label="@string/sample_title_activity_about"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cn.aorise.plugin.ui.activity.MainActivity"
-            android:label="@string/sample_title_activity_main" />
+            android:label="@string/sample_title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cn.aorise.plugin.ui.activity.ImageActivity"
-            android:label="@string/sample_title_activity_image" />
+            android:label="@string/sample_title_activity_image"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cn.aorise.plugin.ui.activity.NetworkActivity"
-            android:label="@string/sample_title_activity_net" />
+            android:label="@string/sample_title_activity_net"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cn.aorise.plugin.ui.activity.ListActivity"
-            android:label="@string/sample_title_activity_list_db" />
+            android:label="@string/sample_title_activity_list_db"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cn.aorise.plugin.ui.activity.NetListV2Activity"
-            android:label="@string/sample_title_activity_list_net" />
+            android:label="@string/sample_title_activity_list_net"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cn.aorise.plugin.ui.activity.DbActivity"
-            android:label="@string/sample_title_activity_db" />
+            android:label="@string/sample_title_activity_db"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
