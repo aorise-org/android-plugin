@@ -5,7 +5,7 @@ apply plugin: 'org.greenrobot.greendao'
 greendao {
     schemaVersion 1
     targetGenDir 'src/main/java'
-    daoPackage 'cn.aorise.plugin.db'
+    daoPackage 'cn.aorise.sample.db'
 }
 
 
@@ -162,5 +162,5 @@ dependencies {
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.qihoo360.replugin:replugin-plugin-lib:2.1.0'
-    compile rootProject.ext.dependencies['aorise-common']
+    compile 'cn.aorise:android-common:1.0.6-SNAPSHOT'
 }

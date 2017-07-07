@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context="cn.aorise.plugin.ui.activity.NetworkActivity">
+        tools:context="cn.aorise.sample.ui.activity.NetworkActivity">
 
         <include layout="@layout/aorise_include_toolbar"/>
 

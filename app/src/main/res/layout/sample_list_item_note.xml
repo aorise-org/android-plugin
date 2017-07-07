@@ -5,7 +5,7 @@
 
         <variable
             name="sampleNote"
-            type="cn.aorise.plugin.db.entity.SampleNote"/>
+            type="cn.aorise.sample.db.entity.SampleNote"/>
     </data>
 
     <RelativeLayout
