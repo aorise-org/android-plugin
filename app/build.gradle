@@ -74,7 +74,8 @@ android {
 
             println "variant.outputs: ${variant.buildType.name} output.outputFile: ${output.outputFile}"
             if (variant.buildType.name.equals('release')) {
-                def apkName = name + '-' + version + '-' + BUILD_TIME + '-release.apk'
+                // def apkName = name + '-' + version + '-' + BUILD_TIME + '-release.apk'
+                def apkName = APP_NAME + '.' + variant.productFlavors[0].name + '.jar'
                 output.outputFile = new File(output.outputFile.parent, apkName)
             }
 
@@ -97,7 +98,7 @@ android {
             versionName "1.0.0"
 
             manifestPlaceholders = [PACKAGE_NAME_VALUE    : "cn.aorise.education",
-                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.plugin.ui.activity.MainActivity",
+                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.sample.ui.activity.MainActivity",
                                     CHANNEL_VALUE         : "aorise",
                                     UMENG_APPKEY_VALUE    : "594a0dc076661341b30014d1"]
         }
@@ -107,7 +108,7 @@ android {
 //            versionName "1.0.0"
 //
 //            manifestPlaceholders = [PACKAGE_NAME_VALUE    : "cn.aorise.hospital",
-//                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.plugin.ui.activity.MainActivity",
+//                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.sample.ui.activity.MainActivity",
 //                                    CHANNEL_VALUE         : "aorise",
 //                                    UMENG_APPKEY_VALUE    : "594a0dc076661341b30014d1"]
 //        }
@@ -118,7 +119,7 @@ android {
 //            versionName "1.0.0"
 //
 //            manifestPlaceholders = [PACKAGE_NAME_VALUE    : "cn.aorise.petition",
-//                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.plugin.ui.activity.MainActivity",
+//                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.sample.ui.activity.MainActivity",
 //                                    CHANNEL_VALUE         : "aorise",
 //                                    UMENG_APPKEY_VALUE    : "594a0dc076661341b30014d1"]
 //        }
@@ -127,7 +128,7 @@ android {
             versionCode 1
             versionName "1.0.0"
             manifestPlaceholders = [PACKAGE_NAME_VALUE    : "cn.aorise.sample",
-                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.plugin.ui.activity.MainActivity",
+                                    LOGIN_CLASS_NAME_VALUE: "cn.aorise.sample.ui.activity.MainActivity",
                                     CHANNEL_VALUE         : "aorise",
                                     UMENG_APPKEY_VALUE    : "594a0dc076661341b30014d1"]
         }
