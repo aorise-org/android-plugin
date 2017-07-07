@@ -67,7 +67,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cn.aorise.sample.ui.activity.MainActivity"
-            android:label="@string/sample_title_activity_main"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cn.aorise.sample.ui.activity.ImageActivity"

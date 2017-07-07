@@ -1,4 +1,4 @@
-package cn.aorise.sample.config;
+package cn.aorise.sample.common;
 
 /**
  * Created by tangjy on 2015/11/3 0003.
