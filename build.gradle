@@ -11,14 +11,14 @@ buildscript {
         // in the individual module build.gradle files
         classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
         classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.2"
-	classpath 'com.qihoo360.replugin:replugin-plugin-gradle:2.1.2'
+        classpath 'com.qihoo360.replugin:replugin-plugin-gradle:2.1.2'
     }
 }
 
 allprojects {
     repositories {
         jcenter()
-        mavenCentral()
+        //mavenCentral()
         maven {
             url "https://raw.githubusercontent.com/aorise-org/maven-snapshots/master"
             //url "https://dl.bintray.com/aorise-android-group/maven/"
